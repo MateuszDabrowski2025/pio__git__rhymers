@@ -1,9 +1,17 @@
 package edu.kis.vh.nursery;
 
+/**
+ *
+ * @author Mateusz Dąbrowski
+ */
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
     private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+    /**
+     *
+     * @return int
+     */
     @Override
     public int countOut() {
         while (!callCheck())
@@ -17,3 +25,4 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
         return ret;
     }
 }
+
